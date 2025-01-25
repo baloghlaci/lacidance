@@ -105,22 +105,41 @@
             color: #0565c5;
         }
         @media (max-width: 768px) {
-            /* Reszponzív stílusok kisebb képernyőkön */
-            p, .p6, .p7 {
-                margin-left: 5%; /* Kisebb behúzás telefonon */
-                margin-right: 5%;
-                font-size: 18px; /* Kisebb betűméret telefonon */
-            }
-            .sablon-image {
-                width: 25%; /* Kisebb kép telefonon */
-            }
-            .atlagos-kep {
-                width: 90%; /* Nagyobb kép telefonon */
-            }
-            h1, h2, .p1, .p2, .p3, .p5, p, .p6, .p7 {
-                font-size: 28px; /* Kisebb címek telefonon */
-            }
-        }
+    header {
+        padding: 10px; /* Kisebb padding telefonon */
+    }
+    h1 {
+        font-size: 28px; /* Kisebb cím telefonon */
+    }
+    nav {
+        position: static; /* Navigáció ne legyen abszolút pozícionálva */
+        text-align: center; /* Középre igazítás */
+        margin-top: 10px; /* Térköz a cím alatt */
+    }
+    nav a {
+        display: inline-block; /* Vízszintes menü telefonon */
+        margin: 5px;
+    }
+    @media (max-width: 768px) {
+    .sablon-image {
+        position: static; /* Ne legyen abszolút pozícionálva */
+        width: 30%; /* Kisebb kép telefonon */
+        margin: 10px auto; /* Középre igazítás */
+        display: block;
+    }
+}
+    @media (max-width: 768px) {
+    p, .p6, .p7 {
+        margin-left: 5%; /* Kisebb behúzás telefonon */
+        margin-right: 5%;
+        font-size: 18px; /* Kisebb betűméret telefonon */
+    }
+    .atlagos-kep {
+        width: 90%; /* Nagyobb kép telefonon */
+    }
+}
+
+}
     </style>
 </head>
 <body>
