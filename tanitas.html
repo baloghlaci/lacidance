@@ -3,35 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Balogh László Néptáncpedagógus - Kezdőlap</title>
+    <title>Balogh László Néptáncpedagógus - Tanítás</title>
+    <style>
+        /* Egyedi stílusok az eredeti kinézethez */
+        body {
+            background-color: #eb921d; /* Citromsárga háttér */
+            color: #720b0b; /* Szöveg színe */
+            font-family: 'Georgia', serif;
+            margin: 0;
+        }
+        header {
+            background-color: #eb921d;
+            padding: 20px;
+            text-align: left;
+            position: relative;
+        }
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            margin: 0;
+            color: #720b0b;
+            text-align: left; /* Cím balra igazítva */
+        }
+        h2 {
+            font-size: 35px;
+            font-weight: bold;
+            margin: 0;
+            color: #720b0b;
+            text-align: center; /* Cím balra igazítva */
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav a {
+            display: block; /* Függőleges menü */
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #ec3737;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #720b0b;
+        }
+        .sablon-image {
+            width: 15%;
+            position: absolute;
+            top: 160px;
+            left: 10px;
+        }
+        .atlagos-kep {
+            width: 70%; /* Nagyobb képek */
+            margin: 20px auto; /* Középre igazítás és térköz */
+            display: block;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: left; /* Szöveg balról jobbra */
+            margin: 20px 10%; /* Szélesebb margó, hogy ne menjen a kép alá */
+        }
+        .container {
+            text-align: center; /* Tartalom középre igazítása */
+            padding-top: 100px; /* Térköz a fejléc alatt */
+        }
+        .p1 {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: left; /* Cím balra igazítva */
+        }
+        .p6 {
+            font-size: 25px;
+            text-align: left; /* Balról jobbra szöveg */
+            margin: 20px 10%; /* Szélesebb margó */
+        }
+        .p2 {
+            font-size: 31px;
+            font-weight: bold;
+            text-align: left; /* Cím balra igazítva */
+        }
+        .p3 {
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center; /* Dátum balra igazítva */
+        }
+        .p7 {
+            font-size: 25px;
+            text-align: left; /* Balról jobbra szöveg */
+            margin: 20px 10%; /* Szélesebb margó */
+        }
+        .vastag-szam {
+            font-weight: bold;
+        }
+        .kekbetu {
+            color: #0565c5;
+        }
+        @media (max-width: 768px) {
+            /* Reszponzív stílusok kisebb képernyőkön */
+            p, .p6, .p7 {
+                margin-left: 5%; /* Kisebb behúzás telefonon */
+                margin-right: 5%;
+                font-size: 18px; /* Kisebb betűméret telefonon */
+            }
+            .sablon-image {
+                width: 25%; /* Kisebb kép telefonon */
+            }
+            .atlagos-kep {
+                width: 90%; /* Nagyobb kép telefonon */
+            }
+            h1, h2, .p1, .p2, .p3, .p5, p, .p6, .p7 {
+                font-size: 28px; /* Kisebb címek telefonon */
+            }
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <h1>Balogh László<br> Néptáncpedagógus</h1>
+        <nav>
+            <a href="kezdolap.html" target="_self">Kezdőlap</a>
+            <a href="tanitas.html" target="_self">Tanítás</a>
+            <a href="esemenyek.html" target="_self">Események</a>
+            <a href="fotogaleria.html" target="_self">Fotógaléria</a>
+            <a href="kapcsolat.html" target="_self">Kapcsolat</a>
+        </nav>
     </header>
 
-    <section>
-        <img src="kep/1.jpg" alt="Kép" class="sablon-image">
-        <h1>TANÍTÁS</h1>
-        <p class="p6">A tánc tanítás komplex művészetipedagógiai tevékenység. A néptánc tanítása hatékonyan járul<br> hozzá a magyarságtudat
-            erősítéséhez, fejleszti a ritmusérzéket, a térérzékelést, a testtartást és a mozgáskoordinációt,amely<br> a mindennapi élet számos
-            területén fontos. Hozzájárul az egészség megőrzéséhez, fejleszti a társas kapcsolatok iránti érzéket:<br> együttműködésre,
-            alkalmazkodásra, a másik nem, a másik személy, a másik csoport elfogadására és megbecsülésére ösztönöz.<br> Mindezt igyekszünk
-            korosztályuknak megfelelő vidám, játékos természetes formában tenni, olyan hangulatot teremtve,<br> amelyben a gyermek oldott,
-            fesztelenül érzik magukat.</p>
-            <img src="kep/21.jpg" alt="Kép" class="atlagos-kep">
-
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <img src="kep/1.jpg" alt="Kép" class="sablon-image">
+                <h2>TANÍTÁS</h2>
+                <p class="p6">
+                    A tánc tanítás komplex művészetipedagógiai tevékenység. A néptánc tanítása hatékonyan járul hozzá a magyarságtudat
+                    erősítéséhez, fejleszti a ritmusérzéket, a térérzékelést, a testtartást és a mozgáskoordinációt, amely a mindennapi élet számos
+                    területén fontos. Hozzájárul az egészség megőrzéséhez, fejleszti a társas kapcsolatok iránti érzéket: együttműködésre,
+                    alkalmazkodásra, a másik nem, a másik személy, a másik csoport elfogadására és megbecsülésére ösztönöz. Mindezt igyekszünk
+                    korosztályuknak megfelelő vidám, játékos természetes formában tenni, olyan hangulatot teremtve, amelyben a gyermek oldott,
+                    fesztelenül érzik magukat.
+                </p>
+                <img src="kep/21.jpg" alt="Kép" class="atlagos-kep">
+            </div>
+        </div>
     </section>
 
-    <nav>
-        <a href="kezdolap.html" target="_self">Kezdőlap</a>
-        <a href="tanitas.html" target="_self">Tanítás</a>
-        <a href="esemenyek.html" target="_self">Események</a>
-        <a href="fotogaleria.html" target="_self">Fotógaléria</a>
-        <a href="kapcsolat.html" target="_self">Kapcsolat</a>
-    </nav>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
